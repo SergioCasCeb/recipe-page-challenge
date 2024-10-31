@@ -49,7 +49,7 @@ The challenge was to build out the recipe page and get it looking as close as po
 
 ### What I learned
 
-This challenge was a perfect opportunity to create custom ul and ol markers. Specially with the ol list markers, it was fun to play with the CSS counter functionality, which is a variable I don't usually ge to play around with.
+This challenge was a perfect opportunity to create custom ul and ol markers. Specially with the ol list markers, it was fun to play with the CSS counter functionality, which is a variable I don't usually get to play around with.
 
 ```scss
 ol {
