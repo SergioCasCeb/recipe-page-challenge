@@ -26,7 +26,7 @@ The challenge was to build out the recipe page and get it looking as close as po
 
 ### Links
 
-- Solution URL: [Frontend Mentors Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentors Solution](https://www.frontendmentor.io/solutions/responsive-recipe-page-with-scss-dX3jb3qiSG)
 - Live Site URL: [Netlify](https://fm-recipe-page-challenge-sergio.netlify.app/)
 
 ## My process
