@@ -169,13 +169,17 @@ footer .attribution a {
   flex-direction: column;
   gap: var(--sp-sm);
 }
-.recipe .introduction,
+.recipe .introduction {
+  --_section-color: var(--clr-stone-900);
+}
+.recipe .introduction .section-title {
+  font-size: var(--fs-header);
+}
 .recipe .ingredients,
 .recipe .instructions,
 .recipe .nutrition {
   --_section-color: var(--clr-brown-800);
 }
-.recipe .introduction .section-title,
 .recipe .ingredients .section-title,
 .recipe .instructions .section-title,
 .recipe .nutrition .section-title {

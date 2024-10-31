@@ -41,7 +41,14 @@
         }
     }
 
-    .introduction,
+    .introduction {
+        --_section-color: var(--clr-stone-900);
+
+        .section-title {
+            font-size: var(--fs-header);
+        }
+    }
+
     .ingredients,
     .instructions,
     .nutrition {
