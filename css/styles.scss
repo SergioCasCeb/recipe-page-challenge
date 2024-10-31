@@ -1,0 +1,155 @@
+/**
+ * CSS reset.
+ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}
+
+html {
+    hanging-punctuation: first last;
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+    width: 100%;
+    max-width: 65ch;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+    }
+}
+
+/*
+* Globals
+*/
+
+:root {
+
+    //Colors
+
+    --clr-neutral-50: #ffffff;
+
+    --clr-stone-100: hsl(30, 54%, 90%);
+    --clr-stone-150: hsl(30, 18%, 87%);
+    --clr-stone-600: hsl(30, 10%, 34%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+
+    --clr-brown-800: hsl(14, 45%, 36%);
+
+    --clr-rose-50: hsl(330, 100%, 98%);
+    --clr-rose-800: hsl(332, 51%, 32%);
+
+    // Typography
+
+    --fs-header: 2.25rem; // 24px
+    --fs-xlg: 1.75rem; // 24px
+    --fs-lg: 1.25rem; // 20px
+    --fs-m: 1rem; // 16px
+    --fs-sm: 0.875rem; // 14px
+    --fs-xsm: 0.75rem; // 12px
+
+    --ff-primary: "Outfit", sans-serif;
+    --ff-secondary: "Young Serif", serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    --lh-title: 1.2;
+    --lh-body: 1.5;
+
+    // Spacing
+    --sp-xlg: 2rem; //40px
+    --sp-lg: 1.5rem; //24px
+    --sp-m: 1rem; //16px
+    --sp-sm: .75rem; //12px
+    --sp-xsm: .25rem; //8px
+}
+
+html {
+    background-color: var(--clr-stone-100); 
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body);
+    color: var(--clr-stone-600);
+    font-size: var(--fs-m);
+}
+
+h1,
+h2 {
+    font-family: var(--ff-secondary)
+}
+
+footer {
+    text-align: center;
+    padding: var(--sp-m) var(--sp-xlg);
+    background-color: var(--clr-neutral-50);
+    transition: background-color 250ms ease-in-out;
+
+    .attribution {
+        font-size: var(--fs-sm);
+
+        a {
+            color: var(--clr-brown-800);
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 46rem) {
+    footer {
+        background-color: var(--clr-stone-100);
+    }
+}
+
+/*
+* Utilities
+*/
+
+.container {
+    max-width: 46rem;
+    margin: 0 auto;
+}
+
+/*
+* Components
+*/
+@import 'recipe';
