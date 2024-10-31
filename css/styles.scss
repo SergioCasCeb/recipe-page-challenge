@@ -115,7 +115,9 @@ body {
 
 h1,
 h2 {
-    font-family: var(--ff-secondary)
+    &:not(.prep-time__title) {
+        font-family: var(--ff-secondary)
+    }
 }
 
 footer {
